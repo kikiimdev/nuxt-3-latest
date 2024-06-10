@@ -1,8 +1,6 @@
 export default eventHandler(async (event) => {
   try {
-    return {
-      status: "healthy",
-    }
+    return "OK"
   } catch (error: any) {
     throw createError(error)
   }
